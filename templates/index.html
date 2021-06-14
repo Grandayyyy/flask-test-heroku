@@ -1,0 +1,179 @@
+
+{% extends "layout.html" %}
+
+{% block header%}
+<!-- Inner -->
+<div class="inner">
+	<header>
+		<h1><a href="{{ url_for('index') }}" id="logo">Vetejo Technologies</a></h1>
+		<hr />
+		
+	</header>
+	<footer>
+		<a href="#banner" class="button circled scrolly">Start</a>
+	</footer>
+</div>
+{% endblock header%}
+
+{% block content %}
+<!-- Banner -->
+	<section id="banner">
+		<header>
+			<h2><strong>Bio</strong></h2>
+			<p>
+				From strategic planning to innovative solutions, our focus is always on building an efficient and results-driven relationship. we will work with you to create a customized plan of action for yourself or your organization. Get in touch to learn more about my vision and consulting approach. Creating opportunities for undergraduate students specially train them for different competitions and supporting them for different employment opportunities by offering expertise on different technologies in the field of IoT and Robotics and setting up their own firms.
+			</p>
+		</header>
+	</section>
+
+<!-- Carousel -->
+<header style="padding:2em 2em 0 2em; text-align:center">
+	<h2>Products</h2>
+	<p>My goal is to help individuals and businesses bring their ideas to life. I’ve taken on a variety of small and large-scale projects, always exceeding my clients’ expectations. Take a look at my projects below.</p>
+</header>	
+<section class="carousel">
+			
+		<div class="reel">
+			<article>
+				<a href="#" class="image featured"><img src="{{ url_for('static', filename='images/pic01.webp') }}" alt="" /></a>
+				<header>
+					<h3><a href="#">Agriculture</a></h3>
+				</header>
+				<p>Using different machine learning algorithms and predict the crop and display in a web application.</p>
+			</article>
+
+			<article>
+				<a href="#" class="image featured"><img src="{{ url_for('static', filename='images/pic02.webp') }}" alt="" /></a>
+				<header>
+					<h3><a href="#">Smart Navigation</a></h3>
+				</header>
+				<p>This web application will be much useful for the people for easy navigation in unfamiliar surroundings</p>
+			</article>
+
+			<article>
+				<a href="#" class="image featured"><img src="{{ url_for('static', filename='images/pic03.webp') }}" alt="" /></a>
+				<header>
+					<h3><a href="#">Smart Advertising</a></h3>
+				</header>
+				<p>The virtual experience page helps the user to explore the mall virtually with going.</p>
+			</article>
+
+			<article>
+				<a href="#" class="image featured"><img src="{{ url_for('static', filename='images/pic04.webp') }}" alt="" /></a>
+				<header>
+					<h3><a href="#">Smart Society Management</a></h3>
+				</header>
+				<p>Integrating Lighting and Transportation into one and making them smart in living societies.</p>
+			</article>
+
+			<article>
+				<a href="#" class="image featured"><img src="{{ url_for('static', filename='images/pic05.webp') }}" alt="" /></a>
+				<header>
+					<h3><a href="#">Mobility</a></h3>
+				</header>
+				<p>This was the project to develop a surveillance system which can be used for Agricultural purposes.</p>
+			</article>
+
+		</div>
+	</section>
+
+<!-- Main -->
+	<div class="wrapper style2">
+
+		<article id="main" class="container special" style="text-align: center;">
+			<a href="#" class="image featured"><img src="{{ url_for('static', filename='images/IOT.jpg') }}" alt="" /></a>
+			<header>
+				<h2><a href="#">Lab Setup</a></h2>
+				<p>
+					COMMITTED TO EXCELLENCE
+				</p>
+			</header>
+			<p style="text-align: center;">
+				IoT Experimental Kit is a solution having Robotics components like ESP module, Arduino and Raspberry Pi. The kit is ready to use for students of Btech in all disciplines who are looking for learning how to use them and also train for different competitions in tech fests and win prizes.
+			</p>
+		</article>
+
+	</div>
+
+<!-- Features -->
+	<div class="wrapper style1">
+
+		<section id="features" class="container special">
+			<header>
+				<h2>Trainings</h2>
+				<p>YOUR STRATEGIC PARTNER</p>
+			</header>
+			<div class="row">
+				<article class="col-3 col-12-mobile special">
+					<a href="#" class="image featured"><img src="{{ url_for('static', filename='images/training01.webp') }}" alt="" /></a>
+					<header>
+						<h3><a href="#">IOT with Cloud Platform</a></h3><br>
+						<h4>THE PATH TO SUCCESS</h4>
+					</header>
+					<p>
+						The Internet of Things (IoT) refers to a system of interrelated, internet-connected objects that are able to collect and transfer data over a wireless network without human intervention.
+					</p>
+				</article>
+				<article class="col-3 col-12-mobile special">
+					<a href="#" class="image featured"><img src="{{ url_for('static', filename='images/training02.webp') }}" alt="" /></a>
+					<header>
+						<h3><a href="#">Robotics</a></h3><br>
+						<h4>A COMPREHENSIVE APPROACH</h4>
+					</header>
+					<p>
+						Wired robot is controlled manually or by switches. Here we are going to use switches to control the dc geared motor. 
+					</p>
+				</article>
+				<article class="col-3 col-12-mobile special">
+					<a href="#" class="image featured"><img src="{{ url_for('static', filename='images/training03.webp') }}" alt="" /></a>
+					<header>
+						<h3><a href="#">RC plane and UAV's</a></h3><br>
+						<h4>EXPERT GUIDANCE</h4>
+					</header>
+					<p>
+						You’ll most commonly hear the term Drone used by the media and military, and UAV used most often by the FAA.  The words Drone and UAV mean the same thing, and can be used interchangeably.
+					</p>
+				</article>
+				<article class="col-3 col-12-mobile special">
+					<a href="#" class="image featured"><img src="{{ url_for('static', filename='images/training04.webp') }}" alt="" /></a>
+					<header>
+						<h3><a href="#">Machine Learning</a></h3><br>
+						<h4>THE PATH TO SUCCESS</h4>
+					</header>
+					<p>
+						Machine learning certification course.
+					</p>
+				</article>
+			</div>
+		</section>
+
+	</div>
+
+	<section id="four" class="wrapper style1 special fade-up">
+		<div class="container">
+			<header class="major">
+				<h2>Clients</h2>
+			</header>
+			<div class="box alt">
+				<div class="row gtr-uniform" style="text-align: center;">
+					<section class="col-4 col-6-medium col-12-xsmall">
+						<a href="#" class="image img"><img src="{{ url_for('static', filename='images/Client 2.webp') }}" alt="" /></a>
+						<h3>Polar</h3>
+						<p>For many years, I’ve worked with Polar on complex matters. Once we defined our objectives, we were able to build a long-term plan that has helped them get back on track and achieve their goals.</p>
+					</section>
+					<section class="col-4 col-6-medium col-12-xsmall">
+						<a href="#" class="image img"><img src="{{ url_for('static', filename='images/Client 7.webp') }}" alt="" /></a>
+						<h3>Itaka</h3>
+						<p>Itaka approached me about a very intricate issue. Once we analyzed the situation, we were able to put a plan together and achieve amazing results. If you want to learn more about the benefits of my services, get in touch.</p>
+					</section>
+					<section class="col-4 col-6-medium col-12-xsmall">
+						<a href="#" class="image img"><img src="{{ url_for('static', filename='images/Client 8.webp') }}" alt="" /></a>
+						<h3>Hexa</h3>
+						<p>I have been working with Hexa for many years. Together, we created a number of successful projects that helped my client’s business grow. To learn more about my clients and what I can do for you, contact me today.</p>
+					</section>
+				</div>
+			</div>
+		</div>
+	</section>
+
+{% endblock content %}

@@ -1,0 +1,186 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Vetejo technologies</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="{{ url_for('static', filename='assets/css/main.css') }}" />
+		<noscript><link rel="stylesheet" href="{{ url_for('static', filename='assets/css/noscript.css') }}" /></noscript>
+	</head>
+
+	{%if blog == True%}
+	<body class="no-sidebar is-preload">
+	{%else%}
+	<body class="homepage is-preload">
+	{%endif%}
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<div id="header">
+
+					{% block header %}{% endblock %}
+
+					<!-- Nav -->
+					<nav id="nav">
+						<ul>
+							<li>
+								<a href="#">Products</a>
+								<ul>
+									<li><a href="{{ url_for('agr') }}">Agriculture</a></li>
+									<li><a href="{{ url_for('nav') }}">Smart Navigation</a></li>
+									<li><a href="{{ url_for('adv') }}">Smart Advertising</a></li>
+									<li><a href="{{ url_for('soc') }}">Smart Society Management</a></li>
+									<li><a href="{{ url_for('mob') }}">Mobility</a></li>
+								</ul>
+							</li>
+							<li><a href="{{ url_for('index') }}">Home</a></li>
+							<li>
+								<a href="#">Trainings</a>
+								<ul>
+									<li><a href="{{ url_for('iot') }}">IOT with Cloud Platform</a></li>
+									<li><a href="{{ url_for('rob') }}">Robotics</a></li>
+									<li><a href="{{ url_for('rc') }}">RC Plane and UAV's</a></li>
+									<li><a href="{{ url_for('ml') }}">Machine Learning</a></li>
+								</ul>
+							</li>
+						</ul>
+					</nav>
+
+				</div>
+
+                {% block content %}{% endblock %}
+
+                <!-- Footer -->
+				<div id="footer">
+					<div class="container">
+						<hr>
+						<div class="row">
+							
+							<section class="col-6 col-12-mobile">
+								<header>
+									<p>Products</p>
+								</header>
+								<ul class="divided">
+									<li>
+										<article class="post stub">
+											<header>
+												<h3><a href="{{ url_for('agr') }}">Agriculture</a></h3>
+											</header>
+										</article>
+									</li>
+									<li>
+										<article class="post stub">
+											<header>
+												<h3><a href="{{ url_for('nav') }}">Smart Navigation</a></h3>
+											</header>
+										</article>
+									</li>
+									<li>
+										<article class="post stub">
+											<header>
+												<h3><a href="{{ url_for('adv') }}">Smart Advertising</a></h3>
+											</header>
+										</article>
+									</li>
+									<li>
+										<article class="post stub">
+											<header>
+												<h3><a href="{{ url_for('soc') }}">Smart Society Management</a></h3>
+											</header>
+										</article>
+									</li>
+									<li>
+										<article class="post stub">
+											<header>
+												<h3><a href="{{ url_for('mob') }}">Mobility</a></h3>
+											</header>
+										</article>
+									</li>
+								</ul>
+							</section>
+
+							
+							<section class="col-6 col-12-mobile">
+								<header>
+									<p>Trainings</p>
+								</header>
+								<ul class="divided">
+									<li>
+										<article class="post stub">
+											<header>
+												<h3><a href="{{ url_for('iot') }}">IOT with Cloud Platform</a></h3>
+											</header>
+										</article>
+									</li>
+									<li>
+										<article class="post stub">
+											<header>
+												<h3><a href="{{ url_for('rob') }}">Robotics</a></h3>
+											</header>
+										</article>
+									</li>
+									<li>
+										<article class="post stub">
+											<header>
+												<h3><a href="{{ url_for('rc') }}">RC Plane and UAV's</a></h3>
+											</header>
+										</article>
+									</li>
+									<li>
+										<article class="post stub">
+											<header>
+												<h3><a href="{{ url_for('ml') }}">Machine Learning</a></h3>
+											</header>
+										</article>
+									</li>
+								</ul>
+							</section>
+
+							<div class="col-12">
+
+								<!-- Contact -->
+									<section class="contact">
+										<header>
+											<h3>Contact Us</h3>
+										</header>
+										<p>Nallakunta, Hyderabad.</p>
+										<p>yeshpns@gmail.com</p>
+										<p>+91 6305957132</p>
+										<ul class="icons">
+											<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+											<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+											<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+											<li><a href="#" class="icon brands fa-pinterest"><span class="label">Pinterest</span></a></li>
+											<li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
+											<li><a href="#" class="icon brands fa-linkedin-in"><span class="label">Linkedin</span></a></li>
+										</ul>
+									</section>
+
+								<!-- Copyright -->
+									<div class="copyright">
+										<ul class="menu">
+											<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="">Vetejo Technologies</a></li>
+										</ul>
+									</div>
+
+							</div>
+
+						</div>
+					</div>
+				</div>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="{{ url_for('static', filename='assets/js/jquery.min.js') }}"></script>
+			<script src="{{ url_for('static', filename='assets/js/jquery.dropotron.min.js') }}"></script>
+			<script src="{{ url_for('static', filename='assets/js/jquery.scrolly.min.js') }}"></script>
+			<script src="{{ url_for('static', filename='assets/js/jquery.scrollex.min.js') }}"></script>
+			<script src="{{ url_for('static', filename='assets/js/browser.min.js') }}"></script>
+			<script src="{{ url_for('static', filename='assets/js/breakpoints.min.js') }}"></script>
+			<script src="{{ url_for('static', filename='assets/js/util.js') }}"></script>
+			<script src="{{ url_for('static', filename='assets/js/main.js') }}"></script>
+
+	</body>
+</html>
