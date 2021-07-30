@@ -49,11 +49,6 @@ def iot():
     blog = True
     return render_template('trainings/IOT.html', blog=blog)
 
-# @app.route("/ML")
-# def ml():
-#     blog = True
-#     return render_template('trainings/ML.html', blog=blog)
-
 @app.route("/RC")
 def rc():
     blog = True
@@ -73,6 +68,16 @@ def pb():
 def ui():
     blog = True
     return render_template('trainings/UI.html', blog=blog)
+
+@app.route("/cloud-computing")
+def cc():
+    blog = True
+    return render_template('trainings/CC.html', blog=blog)
+
+@app.route("/electric-vehicles")
+def ev():
+    blog = True
+    return render_template('trainings/EV.html', blog=blog)
 
 if __name__ == '__main__':
     app.run(host="127.0.0.1", port='5000',debug=True, use_reloader=True)

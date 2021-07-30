@@ -3,6 +3,7 @@
 
 {% block header%}
 <!-- Inner -->
+
 <div class="inner">
 	<header>
 		<h1><a href="{{ url_for('index') }}" id="logo">Vetejo Technologies</a></h1>
@@ -16,7 +17,7 @@
 {% endblock header%}
 
 {% block content %}
-<!-- Banner -->
+<!-- Bio -->
 	<section id="banner">
 		<header>
 			<h2><strong>Bio</strong></h2>
@@ -26,7 +27,7 @@
 		</header>
 	</section>
 
-<!-- Carousel -->
+<!-- Products carousel -->
 <header style="padding:2em 2em 0 2em; text-align:center">
 	<h2>Products</h2>
 	<p>The goal is to help individuals and businesses bring their ideas to life. I’ve taken on a variety of small and large-scale projects, always exceeding my clients’ expectations. Take a look at my projects below.</p>
@@ -77,7 +78,7 @@
 		</div>
 	</section>
 
-<!-- Main -->
+<!-- IOT -->
 	<div class="wrapper style2">
 
 		<article id="main" class="container special" style="text-align: center;">
@@ -95,7 +96,7 @@
 
 	</div>
 
-<!-- Features -->
+<!-- Trainings -->
 	<div class="wrapper style1">
 
 		<section id="features" class="container special">
@@ -141,7 +142,7 @@
 						<h4>THE PATH TO SUCCESS</h4>
 					</header>
 					<p>
-						a business analytics service that aims to provide interactive visualizations and business intelligence capabilities with a simple experience helping end users create their own reports and dashboards.
+						A business analytics service that aims to provide interactive visualizations and business intelligence capabilities with a simple experience helping end users create their own reports and dashboards.
 					</p>
 				</article>
 				<article class="col-4 col-12-mobile special">
@@ -154,11 +155,32 @@
 						UiPath is a robotic process automation platform for end-to-end high-scale automation. UiPath software offers solutions for enterprises to automate repetitive office tasks for rapid business transformation.
 					</p>
 				</article>
+				<article class="col-4 col-12-mobile special">
+					<a href="{{ url_for('cc') }}" class="image featured"><img src="{{ url_for('static', filename='images/training06.webp') }}" alt="" /></a>
+					<header>
+						<h3><a href="{{ url_for('cc') }}">Cloud Computing</a></h3><br>
+						<h4>A COMPREHENSIVE APPROACH</h4>
+					</header>
+					<p>
+						Cloud computing is on-demand access, via the internet, to computing resources—applications, servers (physical servers and virtual servers), data storage, development tools, networking capabilities, and more—hosted at a remote data center managed by a cloud services provider (or CSP).
+					</p>
+				</article>
+				<article class="col-4 col-12-mobile special">
+					<a href="{{ url_for('ev') }}" class="image featured"><img src="{{ url_for('static', filename='images/training07.webp') }}" alt="" /></a>
+					<header>
+						<h3><a href="{{ url_for('ev') }}">Electric Vehicles</a></h3><br>
+						<h4>EXPERT GUIDANCE</h4>
+					</header>
+					<p>
+						Electric Vehicles are either partially or fully powered on electric power. Electric vehicles have low running costs as they have less moving parts for maintaining and also very environmentally friendly as they use little or no fossil fuels (petrol or diesel).
+					</p>
+				</article>
 			</div>
 		</section>
 
 	</div>
 
+	<!-- Sponsors -->
 	<section id="four" class="wrapper style1 special fade-up">
 		<div class="container">
 			<header class="major">
